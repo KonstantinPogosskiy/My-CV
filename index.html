@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Parallax</title>
+</head>
+<body>
+<div class="wrapper">
+    <section class="parallax">
+        <div class="parallax__body">
+            <div class="parallax__container _container">
+                <div class="parallax__label">Hello</div>
+                <h1 class="parallax__title">This is my <br>resume</h1>
+            </div>
+            <div class="parallax__images images-parallax">
+                <div class="images-parallax__item">
+                    <div class="images-parallax__sky"></div>
+                </div>
+                <div class="images-parallax__item">
+                    <div class="images-parallax__mountains_1"></div>
+                </div>
+                <div class="images-parallax__item">
+                    <div class="images-parallax__mountains_2"></div>
+                </div>
+                <div class="images-parallax__item">
+                    <div class="images-parallax__mountains_3"></div>
+                </div>
+                <div class="images-parallax__item">
+                    <div class="images-parallax__forest"></div>
+                </div>
+                <div class="images-parallax__item">
+                    <div class="images-parallax__human"></div>
+                </div>
+                <div class="images-parallax__item">
+                    <div class="images-parallax__grass"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume">
+        <div class="resume__container _container">
+            <div class="resume__avatar">
+            </div>
+            <div class="resume__description">
+                <h2>POGOSSKIY KONSTANTIN</h2>
+                <p class="position">Trainee/Junior Front-End Developer</p>
+                <p class="location">Belarus/Minsk</p>
+                <hr>
+                <div class="social">
+                    <a href="tel: +375293024041" target="_blank"><i class="fas fa-phone-square-alt"></i></a>
+                    <a href="mailto:pogosskiykonstantin@gmail.com" target="_blank"><i class="fas fa-at"></i></a>
+                    <a href="https://github.com/KonstantinPogosskiy" target="_blank"><i class="fab fa-github-square"></i></a>
+                    <a href="https://www.linkedin.com/in/konstantin-pogosskiy" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                </div>
+                <div class="aboutme">
+                    <p>I have always wanted to do work that is beneficial at the same time it brings pleasure in
+                        the fact that you create something, something that will be enjoyable, in which case I know.
+                        that for me the interface and development in general is just such a job.</p>
+                    <p>Endowed with discipline and hard work in business, I am busy constantly striving to learn something new.
+                        I adhere to the principle of support and support in my work.</p>
+                </div>
+            </div>
+            <div class="resume__skills _str">
+                <h4 class="title">Hard Skills</h4>
+                <hr>
+                    <li>JavaScript (ES6+)</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>React (Hooks, Router, Flux)</li>
+                    <li>Material UI</li>
+                    <li>Redux</li>
+                    <li>Git</li>
+                    <li>Webpack</li>
+                    <li>Bootstrap</li>
+                    <li>Photoshop</li>
+                    <li>Figma</li>
+            </div>
+            <div class="resume__experience _str">
+                <h4 class="title">Experience</h4>
+                <hr>
+                <p>2020 - 2021</p>
+                <p>Student</p>
+                <p>TeachMeSkills - “Front End developer”</p>
+                <br>
+                <p>2016 - 2021</p>
+                <p>Bailiff</p>
+                <p>General Department of Justice of the
+                    Minsk cities Executive Committee</p>
+            </div>
+            <div class="resume__skills _str">
+                <h4 class="title">Soft Skills</h4>
+                <hr>
+                    <li>Very curious</li>
+                    <li>Consistency and planning</li>
+                    <li>Self-study</li>
+                    <li>I can search and find information</li>
+                    <li>Communicative</li>
+            </div>
+            <div class="resume__education _str">
+                <h4 class="title">Education</h4>
+                <hr>
+                <p>2011 - 2016</p>
+                <p>Lawyer</p>
+                <p>Minsk Innovation University</p>
+            </div>
+            <div id="certificate"class="resume__certificate">
+                <a href =#popup class="popup-link">
+                    <img class="certificate"src="img/certificate.jpg">
+                </a>
+            </div>
+            <div class="resume__languagesAndProjects _str">
+                <h4 class="title">languages</h4>
+                <hr>
+                <p>Russian - Native</p>
+                <p>English - Pre-intermediate</p>
+                <h4 class="title">Projects</h4>
+                <hr>
+                <p><a href="https://konstantinpogosskiy.github.io/Movie-SPA/" target="_blank">SearchMovies</a></p>
+                <p><a href="https://konstantinpogosskiy.github.io/AXIT/" target="_blank">AXIT</a></p>
+            </div>
+        </div>
+    </section>
+</div>
+<div id="popup" class="popup">
+    <div class="popup_body">
+        <div class="popup_content">
+      <!-- возможность закрытия окана на крестик
+            <a href="#certificate" class="popup_close close-popup">
+                <i class="fas fa-times"></i>
+            </a> -->
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+<script src="js/popups.js"></script>
+</body>
+</html>
