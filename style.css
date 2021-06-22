@@ -68,29 +68,6 @@ html body {
     text-shadow: 3px 3px 5px black, 0 0 1em red;
 }
 
-@media (max-width: 767px) {
-    .parallax__title {
-        font-size: 50px;
-    }
-
-    .parallax__label {
-        font-size: 16px;
-        margin: 0px 0px 15px 0px;
-    }
-}
-
-@media (max-width: 479px) {
-    .parallax__title {
-        font-size: 36px;
-    }
-
-    .parallax__label::before {
-        flex: 0 0 50px;
-        margin: 0px 10px 0px 0px;
-    }
-}
-
-
 .parallax__images {
     position: absolute;
     width: 113%;
@@ -223,11 +200,11 @@ html body {
 .social a {
     font-size: 35px;
     text-decoration: none;
-    color: #666;
+    color: #b3b3b3;
     padding: 15px;
 }
 
-.social a:hover {
+.social i:hover {
     color: #fbd784;
 }
 
@@ -350,3 +327,6 @@ html body {
     font-size: 25px;
 }
 
+.LaP {
+    display: grid;
+}
