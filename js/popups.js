@@ -1,6 +1,4 @@
 const popupLinks = document.querySelectorAll('.popup-link');
-//const body = document.querySelector('body');
-
 
 if (popupLinks.length > 0) {
     for (let i = 0; i < popupLinks.length; i++) {
@@ -14,23 +12,9 @@ if (popupLinks.length > 0) {
     }
 }
 
-
-/*
-const popupCloseIcon = document.querySelectorAll('.close-popup');
-if (popupCloseIcon.length > 0) {
-    for (let i = 0; i < popupCloseIcon; i++) {
-        const el = popupCloseIcon[i];
-        el.addEventListener('click', function (event) {
-            popupClose(el.closest('.popup'));
-            event.preventDefault();
-        });
-    }
-}
-*/
-
 const popupOpen = (currentPopup) => {
     if (currentPopup) {
-        const popupActive = document.querySelector('.popup.open');
+        const popupActive = document.querySelector('.close-popup');
         if (popupActive) {
             popupClose(popupActive);
         }
