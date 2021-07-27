@@ -341,6 +341,20 @@ html body {
     padding: 30px;
 }
 
+@media screen and (max-width: 1080px) {
+    .popup_body {
+        min-height: 80%;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .popup_body {
+        min-height: 60%;
+        padding: 60px;
+    }
+}
+
 .popup_content {
     background-image: url("img/certificate.jpg");
     background-position: center;
@@ -353,6 +367,20 @@ html body {
     transition: all 0.6s ease 0s;
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+@media screen and (max-width: 1080px) {
+    .popup_content {
+        height: 40vh;
+        width: 70vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .popup_content {
+        height: 10vh;
+        width: 20vh;
+    }
 }
 
 .popup_close {
