@@ -152,6 +152,24 @@ html body {
     grid-row-gap: 4em;
 }
 
+@media screen and (max-width: 1080px) {
+    .resume__container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-column-gap: 2.0em;
+    grid-row-gap: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .resume__container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1.5em;
+        grid-row-gap: 1.0em;
+    }
+}
+
 .resume {
     position: relative;
     z-index: 2;
@@ -213,6 +231,23 @@ html body {
     text-align: justify;
     margin: 20px 0 20px 0;
 }
+
+@media screen and (max-width: 1080px) {
+    .aboutme {
+        font-size: 18px;
+        text-align: justify;
+        margin: 30px 30px 30px 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme {
+        font-size: 18px;
+        text-align: justify;
+        margin: 40px 40px 40px 0;
+    }
+}
+
 .resume__avatar{
     width: 350px;
     height: 350px;
