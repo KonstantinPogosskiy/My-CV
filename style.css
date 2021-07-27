@@ -436,3 +436,14 @@ html body {
 ul {
     padding-left: 20px;
 }
+
+.download {
+    font-size: 18px;
+    color: #fbd784;
+}
+
+.downloadMyCv {
+    font-size: 12px;
+    text-align: right;
+    padding-right: 20px;
+}
