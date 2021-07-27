@@ -78,7 +78,7 @@ html body {
 @media screen and (max-width: 700px) {
     .parallax__title
     {
-        font-size: 120px;
+        font-size: 180px;
     }
 }
 
@@ -272,6 +272,12 @@ html body {
     background-size: 550px;
 }
 
+@media screen and (max-width: 1080px) {
+    .resume__avatar{
+        width: 400px;
+        height: 400px;}
+}
+
 .title {
     color: #fbd784;
     text-transform: uppercase;
@@ -298,7 +304,7 @@ html body {
 
 @media screen and (max-width: 1080px) {
     .resume__skills li {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -308,7 +314,7 @@ html body {
 
 @media screen and (max-width: 1080px) {
     ._str p {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
