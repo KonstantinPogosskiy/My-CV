@@ -68,6 +68,20 @@ html body {
     text-shadow: 3px 3px 5px black, 0 0 1em red;
 }
 
+@media screen and (max-width: 1080px) {
+    .parallax__title
+    {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .parallax__title
+    {
+        font-size: 120px;
+    }
+}
+
 .parallax__images {
     position: absolute;
     width: 113%;
@@ -282,8 +296,20 @@ html body {
     padding: 5px;
 }
 
+@media screen and (max-width: 1080px) {
+    .resume__skills li {
+        font-size: 12px;
+    }
+}
+
 ._str p {
     font-size: 18px;
+}
+
+@media screen and (max-width: 1080px) {
+    ._str p {
+        font-size: 12px;
+    }
 }
 
 .resume__languagesAndProjects a {
@@ -396,5 +422,4 @@ html body {
 
 ul {
     padding-left: 20px;
-
 }
