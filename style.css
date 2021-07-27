@@ -215,10 +215,24 @@ html body {
     font-size: 30px;
 }
 
+@media screen and (max-width: 1080px) {
+    .resume__description h2 {
+        height: 30px;
+        font-size: 35px;
+    }
+}
+
 .position {
     font-size: 21px;
     margin: 0;
 }
+
+@media screen and (max-width: 1080px) {
+    .position {
+        font-size: 16px;
+    }
+}
+
 
 .location {
     font-size: 14px;
@@ -274,8 +288,8 @@ html body {
 
 @media screen and (max-width: 1080px) {
     .resume__avatar{
-        width: 400px;
-        height: 400px;}
+        width: 420px;
+        height: 420px;}
 }
 
 .title {
@@ -304,7 +318,7 @@ html body {
 
 @media screen and (max-width: 1080px) {
     .resume__skills li {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
@@ -314,7 +328,7 @@ html body {
 
 @media screen and (max-width: 1080px) {
     ._str p {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
