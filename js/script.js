@@ -1,6 +1,4 @@
-'use strict'
-
-window.onload = function() {
+window.onload = function () {
     const parallax = document.querySelector('.parallax');
 
     if (parallax) {
@@ -43,42 +41,22 @@ window.onload = function() {
 
             requestAnimationFrame(setMouseParallaxStyle);
         }
-        setMouseParallaxStyle();
 
-        parallax.addEventListener('mousemove', function (e) {
+
+        parallax.addEventListener('mousemove', move);
+        parallax.addEventListener('touchmove', move);
+
+        function move(event) {
             const parallaxWidth = parallax.offsetWidth;
             const parallaxHeight = parallax.offsetHeight;
 
-            const coordX = e.pageX - parallaxWidth / 2;
-            const coordY = e.pageY - parallaxHeight / 2;
+            const coordX = event.pageX - parallaxWidth / 2;
+            const coordY = event.pageY - parallaxHeight / 2;
 
             coordXprocent = coordX / parallaxWidth * 100;
             coordYprocent = coordY / parallaxHeight * 100;
-        });
-
-       /* логика параллакс эффекта при скроле
-        let thresholdSets = [];
-
-        for (let i =0; i <= 1.0; i += 0.005) {
-            thresholdSets.push(i);
         }
-        const callback = function (entries, observer) {
-            const scrollTopProcent = window.pageYOffset / parallax.offsetHeight * 100;
-            setParallaxItemsStyle(scrollTopProcent);
-        };
-        const observer = new IntersectionObserver(callback, {threshold: thresholdSets});
-        observer.observe(document.querySelector('.content'));
-
-        function setParallaxItemsStyle(scrollTopProcent) {
-            content.style.cssText = `transform: translate(0%,-${scrollTopProcent / 9}%);`;
-            mountains1.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 16}%);`;
-            mountains2.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 13}%);`;
-            mountains3.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 12}%);`;
-            forest.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 10}%);`;
-            human.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 6}%);`;
-            grass.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent / 2}%);`;
-        }*/
     }
+    setMouseParallaxStyle();
 }
 
-const image = document.querySelector('.certificate');
