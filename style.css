@@ -105,7 +105,6 @@ html body {
     width: 100%;
     top: -10%;
     left: 5%;
-
 }
 .images-parallax__mountains_2 {
     background: url("./img/moutains2.png") bottom / contain no-repeat;
@@ -163,7 +162,6 @@ html body {
     font-size: 10px;
     background-color: rgba(23, 1, 1, 0.9);
 }
-
 .resume::before {
     pointer-events: none;
     content: '';
@@ -395,7 +393,6 @@ ul {
     padding-left: 20px;
 }
 .download {
-    font-size: 18px;
     color: #fbd784;
 }
 .downloadMyCv {
